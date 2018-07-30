@@ -9,4 +9,7 @@ RUN curl -o takipi-server-java.tar.gz \
     && tar xvf takipi-server-java.tar.gz \
     && rm -rf takipi-server-java.tar.gz
 
-ENTRYPOINT /takipi-server/bin/takipi-server.sh --host-url $HOST_URL -v start && tail --retry -f -n +1 /takipi-server/log/tomcat/tomcat/catalina.log
+ADD run.sh /run.sh
+RUN chmod a+x /run.sh
+
+CMD ["/run.sh"]
