@@ -15,7 +15,7 @@ This image contains the [OverOps](http://www.overops.com) On-prem Server which i
 #### Building the Image
 
 ```bash
-docker build --no-cache -t timveil/oo-docker-onprem-server .
+docker build --no-cache -t timveil/oo-docker-onprem-server:latest .
 ```
 
 #### Publishing the Image
@@ -29,5 +29,5 @@ docker push timveil/oo-docker-onprem-server:latest
 ```bash
 docker run \
     -e HOST_URL=overops-onprem.example.com \
-    timveil/oo-docker-onprem-server
+    timveil/oo-docker-onprem-server:latest
 ```
