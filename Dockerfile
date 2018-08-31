@@ -3,6 +3,7 @@ FROM timveil/oo-docker-base:latest
 LABEL maintainer="tjveil@gmail.com"
 
 ENV HOST_URL=localhost
+ENV STORAGE_HOSTNAME=storage
 
 RUN curl -o takipi-server-java.tar.gz \
     -L https://s3.amazonaws.com/app-takipi-com/deploy/takipi-server/takipi-server-java.tar.gz \
