@@ -9,7 +9,7 @@ This image contains the [OverOps](http://www.overops.com) On-prem Server which i
 | environment variable | default value | note |
 | --- | --- | --- |
 | `SERVER_HOSTNAME` | `localhost` | The host name or ip address of this container, accessible via browser  |
-| `STORAGE_HOSTNAME` | `localhost` | The host name or ip address of this container, accessible from the `controller` container  |
+| `STORAGE_HOSTNAME` | `server` | The host name or ip address of this container, accessible from the `controller` container  |
 
 ## Examples
 
@@ -30,6 +30,6 @@ docker push timveil/oo-docker-onprem-server:latest
 ```bash
 docker run \
     -e SERVER_HOSTNAME=localhost \
-    -e STORAGE_HOSTNAME=storage \
+    -e STORAGE_HOSTNAME=server \
     timveil/oo-docker-onprem-server:latest
 ```
