@@ -2,7 +2,7 @@ FROM timveil/oo-docker-base:latest
 
 LABEL maintainer="tjveil@gmail.com"
 
-ENV HOST_URL=localhost
+ENV SERVER_HOSTNAME=localhost
 ENV STORAGE_HOSTNAME=storage
 
 RUN curl -o takipi-server-java.tar.gz \
