@@ -16,13 +16,13 @@ This image contains the [OverOps](http://www.overops.com) On-prem Server which i
 #### Building the Image
 
 ```bash
-docker build --no-cache -t timveil/oo-docker-onprem-server:latest .
+docker build --no-cache -t timveil/oo-docker-onprem-server:mysql .
 ```
 
 #### Publishing the Image
 
 ```bash
-docker push timveil/oo-docker-onprem-server:latest
+docker push timveil/oo-docker-onprem-server:mysql
 ```
 
 #### Running the Image
@@ -31,5 +31,5 @@ docker push timveil/oo-docker-onprem-server:latest
 docker run \
     -e SERVER_HOSTNAME=localhost \
     -e STORAGE_HOSTNAME=server \
-    timveil/oo-docker-onprem-server:latest
+    timveil/oo-docker-onprem-server:mysql
 ```
