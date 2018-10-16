@@ -12,6 +12,8 @@ RUN curl -o takipi-server-java.tar.gz \
 
 ADD conf/my.server.properties takipi-server/conf/tomcat/shared/my.server.properties
 
+RUN sed -i "s/-tcp /-tcp --tcpAllowOthers /" takipi-server/bin/takipi-server.sh
+
 ADD run.sh /run.sh
 RUN chmod a+x /run.sh
 
