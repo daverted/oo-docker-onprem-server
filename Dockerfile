@@ -18,4 +18,10 @@ RUN sed -i "s/-tcp /-tcp --tcpAllowOthers /" takipi-server/bin/takipi-server.sh
 ADD run.sh /run.sh
 RUN chmod a+x /run.sh
 
+# h2 console
+EXPOSE 8082
+
+# web gui
+EXPOSE 8080
+
 CMD ["/run.sh"]
