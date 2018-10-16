@@ -12,6 +12,7 @@ RUN curl -o takipi-server-java.tar.gz \
 
 ADD conf/my.server.properties takipi-server/conf/tomcat/shared/my.server.properties
 
+# update allows remote connections to H2 for curiosity and debugging
 RUN sed -i "s/-tcp /-tcp --tcpAllowOthers /" takipi-server/bin/takipi-server.sh
 
 ADD run.sh /run.sh
