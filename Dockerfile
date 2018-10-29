@@ -20,4 +20,7 @@ ADD conf/my.server.properties takipi-server/conf/tomcat/shared/my.server.propert
 ADD run.sh /run.sh
 RUN chmod a+x /run.sh
 
+# web gui
+EXPOSE 8080
+
 CMD ["/run.sh"]
