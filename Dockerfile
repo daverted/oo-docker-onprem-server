@@ -6,7 +6,7 @@ LABEL maintainer="tjveil@gmail.com"
 ENV HOST_URL=server
 
 # the url that clients like a web browser
-ENV FRONTEND_URL=localhost
+ENV FRONTEND_URL=http://localhost:8080
 
 RUN curl -o takipi-server-java.tar.gz \
     -L https://s3.amazonaws.com/app-takipi-com/deploy/takipi-server/takipi-server-java.tar.gz \
