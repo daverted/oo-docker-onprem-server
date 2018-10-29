@@ -6,7 +6,7 @@ LABEL maintainer="tjveil@gmail.com"
 ENV HOST_URL=server
 
 # the url that clients like a web browser
-ENV FRONTEND_URL=localhost
+ENV FRONTEND_URL=http://localhost:8080
 
 ENV DB_PORT=5432
 
