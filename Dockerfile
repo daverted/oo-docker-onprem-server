@@ -8,7 +8,10 @@ ENV HOST_URL=server
 # the url that clients like a web browser
 ENV FRONTEND_URL=http://localhost:8080
 
+ENV DB_HOST=db
 ENV DB_PORT=5432
+ENV DB_USER=postgres
+ENV DB_PASSWORD=overops
 
 RUN curl -o takipi-server-java.tar.gz \
     -L https://s3.amazonaws.com/app-takipi-com/deploy/takipi-server/takipi-server-java.tar.gz \
